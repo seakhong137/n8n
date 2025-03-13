@@ -1,0 +1,35 @@
+# Exported from Render on 2025-03-13T08:50:19Z
+services:
+- type: web
+  name: n8n
+  runtime: image
+  image:
+    url: docker.io/n8nio/n8n:latest
+  plan: free
+  envVars:
+  - key: WEBHOOK_URL
+    sync: false
+  - key: TUNNEL_WEBHOOK_URL
+    sync: false
+  - key: GENERIC_TIMEZONE
+    sync: false
+  - key: TZ
+    sync: false
+  - key: N8N_ENCRYPTION_KEY
+    sync: false
+  - key: DB_TYPE
+    sync: false
+  - key: DB_POSTGRESDB_USER
+    sync: false
+  - key: DB_POSTGRESDB_SCHEMA
+    sync: false
+  - key: DB_POSTGRESDB_PASSWORD
+    sync: false
+  - key: DB_POSTGRESDB_PORT
+    sync: false
+  - key: DB_POSTGRESDB_HOST
+    sync: false
+  - key: DB_POSTGRESDB_DATABASE
+    sync: false
+  region: singapore
+version: "1"
